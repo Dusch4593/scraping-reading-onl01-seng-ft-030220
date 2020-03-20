@@ -5,7 +5,7 @@ require 'pry'
 html = open("https://flatironschool.com/")
 doc = Nokogiri::HTML(html)
 
-courses = doc.css(".gridContainer-EnvccM > .inlineMobileLeft-2Yo002")
+courses = doc.css(".gridContainer-EnvccM .inlineMobileLeft-2Yo002")
 
 courses.pop()
 
